@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ESP32 WEB RELAY CONTROLLER</title>
+</head>
+<body>
+    <div class = "layouts">
+        <section class = "navbar">
+            <h3>LAMP CONTROL</h3>
+        </section>
+        <section class="leds">
+            <div class="led">
+                <img src="assets/led-off.png" class="led-image" id="kamarledimage"/>
+                <p class="lamp-location-text">KAMAR</p>
+                <button class="led-submit" id="lampKamar" onclick="setKamarLamp()">TURN ON</button>
+            </div> 
+            <div class="led">
+                <img src="assets/led-off.png" class="led-image" id="terasledimage"/>
+                <p class="lamp-location-text">TERAS</p>
+                <button class="led-submit" id="lampTeras" onclick="setTerasLamp()">TURN ON</button>
+            </div> 
+            <div class="led">
+                <img src="assets/led-off.png" class="led-image" id="dapurledimage"/>
+                <p class="lamp-location-text">DAPUR</p>
+                <button class="led-submit" id="lampDapur" onclick="setDapurLamp()">TURN ON</button>
+            </div> 
+            <div class="led">
+                <img src="assets/led-off.png" class="led-image" id="ruangledimage"/>
+                <p class="lamp-location-text">RUANG TAMU</p>
+                <button class="led-submit" id="lampRuangtamu" onclick="setRuangTamuLamp()">TURN ON</button>
+            </div> 
+        </section>
+        <section class = "bottombar">
+            <ul>
+                <li>
+                    <a href = "/">
+                        <span class="icon">
+                            <i class="fa-solid fa-home"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href = "lamp.html">
+                        <span class="icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <span class="icon">
+                            <i class="fa-solid fa-fan"></i>
+                        </span>                     
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script src = "main.js"></script>
+</body>
+</html>
