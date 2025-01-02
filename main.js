@@ -1,4 +1,4 @@
-const endpoint = "http://192.168.43.245";
+const endpoint = "http://192.168.50.203";
 
 function getKamarLamp(){
     fetch(endpoint + "/kamar").then(response => response.text()).then(result => {
